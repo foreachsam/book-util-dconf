@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://foreachsam.github.io/book-util-dconf/book/</loc>
-     <lastmod>2016-04-18</lastmod>
+     <lastmod>2016-05-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,8 +12,8 @@
     
         
     <url>
-     <loc>https://foreachsam.github.io/book-util-dconf/book/content/referance/manual/</loc>
-     <lastmod>2016-04-18</lastmod>
+     <loc>https://foreachsam.github.io/book-util-dconf/book/content/reference/manual/</loc>
+     <lastmod>2016-05-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,13 +23,13 @@
         
     <url>
      <loc>https://foreachsam.github.io/book-util-dconf/book/content/deb-package/</loc>
-     <lastmod>2016-04-18</lastmod>
+     <lastmod>2016-05-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-dconf/book/content/deb-package/dconf-cli/</loc>
-     <lastmod>2016-04-18</lastmod>
+     <lastmod>2016-05-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -39,7 +39,7 @@
         
     <url>
      <loc>https://foreachsam.github.io/book-util-dconf/book/content/command/dconf/</loc>
-     <lastmod>2016-04-18</lastmod>
+     <lastmod>2016-05-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
