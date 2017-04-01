@@ -17,7 +17,7 @@
         },
         {
             "location": "/content/reference/manual/",
-            "text": "manual\n\n\n\u95b1\u8b80\u6587\u4ef6\n\n\n\n\n$ man 1 \ndconf\n\n\n$ man 7 \ndconf\n\n\n\n\nGNOME Developer\n\n\n\n\ndconf\n\n\nGVariant Text Format",
+            "text": "manual\n\n\n\u95b1\u8b80\u6587\u4ef6\n\n\n\n\n$ man 1 \ndconf\n\n\n$ man 7 \ndconf\n\n\n\n\nGNOME Developer\n\n\n\n\ndconf\n\n\nGVariant Text Format\n\n\n\n\nGNOME Wiki\n\n\n\n\ndconf System Administrator Guide\n\n\n\n\nWikipedia\n\n\n\n\nDconf",
             "title": "manual"
         },
         {
@@ -34,6 +34,16 @@
             "location": "/content/reference/manual/#gnome-developer",
             "text": "dconf  GVariant Text Format",
             "title": "GNOME Developer"
+        },
+        {
+            "location": "/content/reference/manual/#gnome-wiki",
+            "text": "dconf System Administrator Guide",
+            "title": "GNOME Wiki"
+        },
+        {
+            "location": "/content/reference/manual/#wikipedia",
+            "text": "Dconf",
+            "title": "Wikipedia"
         },
         {
             "location": "/content/deb-package/",
