@@ -11,19 +11,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
 
-<title>dconf-cli - DConf 使用筆記</title>
+<title>dconf-editor - DConf 使用筆記</title>
 
 
-<link rel="canonical" href="https://foreachsam.github.io/book-util-dconf/book/content/deb-package/dconf-cli/">
+<link rel="canonical" href="https://foreachsam.github.io/book-util-dconf/book/content/deb-package/dconf-editor/">
 
 
 <meta name="author" content="foreachsam">
 
 
-<meta property="og:url" content="https://foreachsam.github.io/book-util-dconf/book/content/deb-package/dconf-cli/">
-<meta property="og:title" content="dconf-cli - DConf 使用筆記">
+<meta property="og:url" content="https://foreachsam.github.io/book-util-dconf/book/content/deb-package/dconf-editor/">
+<meta property="og:title" content="dconf-editor - DConf 使用筆記">
 
-<meta name="apple-mobile-web-app-title" content="dconf-cli - DConf 使用筆記">
+<meta name="apple-mobile-web-app-title" content="dconf-editor - DConf 使用筆記">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../../assets/images/favicon.ico">
@@ -94,7 +94,7 @@
                 deb package <i class="icon icon-link"></i>
               
             
-          </span>  dconf-cli
+          </span>  dconf-editor
 			</div>
 		</div>
 		  
@@ -196,63 +196,11 @@
 			
 <li>
 	<div itemscope itemtype="http://schema.org/Article">
-		<a class="current" title="dconf-cli" href="./" itemprop="url">
+		<a class="" title="dconf-cli" href="../dconf-cli/" itemprop="url">
 			dconf-cli
     	</a>
 	</div>
-	    
-	<ul>
-		
-		<li class="anchor" >
-			<div itemscope itemtype="http://schema.org/Article">
-				<a title="下載套件" href="#_1" >
-                	下載套件
-				</a>
-			</div>
-		</li>
-		
-		<li class="anchor" >
-			<div itemscope itemtype="http://schema.org/Article">
-				<a title="解開套件" href="#_2" >
-                	解開套件
-				</a>
-			</div>
-		</li>
-		
-		<li class="anchor" >
-			<div itemscope itemtype="http://schema.org/Article">
-				<a title="觀看資料夾結構" href="#_3" >
-                	觀看資料夾結構
-				</a>
-			</div>
-		</li>
-		
-		<li class="anchor" >
-			<div itemscope itemtype="http://schema.org/Article">
-				<a title="manpage" href="#manpage" >
-                	manpage
-				</a>
-			</div>
-		</li>
-		
-		<li class="anchor" >
-			<div itemscope itemtype="http://schema.org/Article">
-				<a title="相關路徑" href="#_4" >
-                	相關路徑
-				</a>
-			</div>
-		</li>
-		
-		<li class="anchor" >
-			<div itemscope itemtype="http://schema.org/Article">
-				<a title="下載 Source Package" href="#source-package" >
-                	下載 Source Package
-				</a>
-			</div>
-		</li>
-		
-	</ul>
-	 
+	
 </li>
 
 
@@ -261,11 +209,23 @@
 			
 <li>
 	<div itemscope itemtype="http://schema.org/Article">
-		<a class="" title="dconf-editor" href="../dconf-editor/" itemprop="url">
+		<a class="current" title="dconf-editor" href="./" itemprop="url">
 			dconf-editor
     	</a>
 	</div>
-	
+	    
+	<ul>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="Package" href="#package" >
+                	Package
+				</a>
+			</div>
+		</li>
+		
+	</ul>
+	 
 </li>
 
 
@@ -317,97 +277,11 @@
 		</div>
 		<article class="article">
 			<div class="wrapper">
-				 <h1 id="dconf-cli">dconf-cli 套件探索</h1>
-<h2 id="_1">下載套件</h2>
-<p>下載「<a href="http://packages.ubuntu.com/trusty/dconf-cli">dconf-cli</a>」這個套件。</p>
-<pre class="code"><code class="language-sh">$ apt-get download dconf-cli</code></pre>
-
-
-<h2 id="_2">解開套件</h2>
-<p>解開「dconf-cli_0.20.0-1_amd64.deb」</p>
-<pre class="code"><code>$ dpkg -x dconf-cli_0.20.0-1_amd64.deb dconf-cli</code></pre>
-
-
-<h2 id="_3">觀看資料夾結構</h2>
-<p>執行</p>
-<pre class="code"><code class="language-sh">$ tree dconf-cli</code></pre>
-
-
-<p>顯示</p>
-<pre class="code"><code>dconf-cli
-└── usr
-    ├── bin
-    │   └── dconf
-    └── share
-        ├── bash-completion
-        │   └── completions
-        │       └── dconf
-        ├── doc
-        │   └── dconf-cli
-        │       ├── changelog.Debian.gz -&gt; ../libdconf1/changelog.Debian.gz
-        │       ├── copyright
-        │       ├── NEWS.Debian.gz -&gt; ../libdconf1/NEWS.Debian.gz
-        │       ├── NEWS.gz -&gt; ../libdconf1/NEWS.gz
-        │       └── README -&gt; ../libdconf1/README
-        └── man
-            ├── man1
-            │   └── dconf.1.gz
-            └── man7
-                └── dconf.7.gz
-
-10 directories, 9 files</code></pre>
-
-
-<p>若有安裝這個套件的話，可執行</p>
-<pre class="code"><code class="language-sh">$ dpkg -L dconf-cli</code></pre>
-
-
-<p>顯示</p>
-<pre class="code"><code>/.
-/usr
-/usr/share
-/usr/share/bash-completion
-/usr/share/bash-completion/completions
-/usr/share/bash-completion/completions/dconf
-/usr/share/man
-/usr/share/man/man7
-/usr/share/man/man7/dconf.7.gz
-/usr/share/man/man1
-/usr/share/man/man1/dconf.1.gz
-/usr/share/doc
-/usr/share/doc/dconf-cli
-/usr/share/doc/dconf-cli/copyright
-/usr/bin
-/usr/bin/dconf
-/usr/share/doc/dconf-cli/README
-/usr/share/doc/dconf-cli/NEWS.Debian.gz
-/usr/share/doc/dconf-cli/NEWS.gz
-/usr/share/doc/dconf-cli/changelog.Debian.gz</code></pre>
-
-
-<h2 id="manpage">manpage</h2>
-<p>顯示</p>
-<pre class="code"><code class="language-sh">$ dpkg -L dconf-cli | grep '/man/man.*/'</code></pre>
-
-
-<pre class="code"><code>/usr/share/man/man7/dconf.7.gz
-/usr/share/man/man1/dconf.1.gz</code></pre>
-
-
+				 <h1 id="dconf-editor">dconf-editor</h1>
+<h2 id="package">Package</h2>
 <ul>
-<li>$ man 1 <a href="http://manpages.ubuntu.com/manpages/trusty/en/man1/dconf.1.html">dconf</a></li>
-<li>$ man 7 <a href="http://manpages.ubuntu.com/manpages/trusty/en/man7/dconf.7.html">dconf</a></li>
+<li><a href="http://packages.ubuntu.com/trusty/dconf-editor">dconf-editor</a></li>
 </ul>
-<h2 id="_4">相關路徑</h2>
-<ul>
-<li>~/.config/dconf/user</li>
-</ul>
-<h2 id="source-package">下載 Source Package</h2>
-<p>執行</p>
-<pre class="code"><code class="language-sh">$ apt-get source dconf-cli</code></pre>
-
-
-<p>會下載「<a href="http://packages.ubuntu.com/source/trusty/d-conf">d-conf</a>」這個「Source Package」</p>
 				<aside class="copyright" role="note">
 					 Copyright (c) foreachsam &ndash;  Documentation built with
 					<a href="http://www.mkdocs.org" target="_blank">MkDocs</a> using the
@@ -421,7 +295,7 @@
 <nav class="pagination" aria-label="Footer">
 	<div class="previous">
 		
-		<a href="../" title="index">
+		<a href="../dconf-cli/" title="dconf-cli">
 			<span class="direction">
             上一頁
           </span>
@@ -431,7 +305,7 @@
 				</div>
 				<div class="stretch">
 					<div class="title">
-						index
+						dconf-cli
 					</div>
 				</div>
 			</div>
@@ -440,14 +314,14 @@
 	</div>
 	<div class="next">
 		
-		<a href="../dconf-editor/" title="dconf-editor">
+		<a href="../../command/dconf/" title="dconf">
 			<span class="direction">
             下一頁
           </span>
 			<div class="page">
 				<div class="stretch">
 					<div class="title">
-						dconf-editor
+						dconf
 					</div>
 				</div>
 				<div class="button button-next" role="button" aria-label="Next">

@@ -205,6 +205,19 @@
 
 
 		
+
+			
+<li>
+	<div itemscope itemtype="http://schema.org/Article">
+		<a class="" title="dconf-editor" href="../../deb-package/dconf-editor/" itemprop="url">
+			dconf-editor
+    	</a>
+	</div>
+	
+</li>
+
+
+		
 	</ul>
 </li>
 
@@ -321,6 +334,9 @@ Commands:
 Use 'dconf help COMMAND' to get detailed help.</code></pre>
 
 
+<ul>
+<li><a href="https://developer.gnome.org/dconf/unstable/dconf-tool.html">dconf</a></li>
+</ul>
 <h2 id="_1">執行指令</h2>
 <p>執行</p>
 <pre class="code"><code class="language-sh">$ dconf dump /</code></pre>
@@ -350,6 +366,45 @@ Use 'dconf help COMMAND' to get detailed help.</code></pre>
 <pre class="code"><code class="language-sh">$ dconf write /org/gnome/nm-applet/show-applet false</code></pre>
 
 
+<p>註: 在write的時候，「設定值」要依據「<a href="https://developer.gnome.org/glib/stable/gvariant-text.html">GVariant Text Format</a>」，</p>
+<p>例如「字串」，</p>
+<p>在「GVariant Text Format」是「"設定值"」或是「'設定值'」，</p>
+<p>在「下指令」的時候，就要變成「'"設定值"'」或是「"'設定值'"」</p>
+<p>所以執行</p>
+<pre class="code"><code class="language-sh">$ dconf write /org/gnome/builder/editor/font-name &quot;'Noto Sans Mono CJK TC 14'&quot;</code></pre>
+
+
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ dconf write /org/gnome/builder/editor/font-name '&quot;Noto Sans Mono CJK TC 14&quot;'</code></pre>
+
+
+<p>就可以成功設定。</p>
+<p>若是執行</p>
+<pre class="code"><code class="language-sh">$ dconf write /org/gnome/builder/editor/font-name 'Noto Sans Mono CJK TC 14'</code></pre>
+
+
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ dconf write /org/gnome/builder/editor/font-name &quot;Noto Sans Mono CJK TC 14&quot;</code></pre>
+
+
+<p>就會出現下面的提示訊息</p>
+<pre class="code"><code>error: 0-1:unknown keyword
+
+Usage:
+  dconf write KEY VALUE
+
+Write a new value to a key
+
+Arguments:
+  KEY         A key path (starting, but not ending with '/')
+  VALUE       The value to write (in GVariant format)</code></pre>
+
+
+<p>注意上面的提示訊息，</p>
+<ul>
+<li>第一行「error: 0-1:unknown keyword」</li>
+<li>最末行「VALUE       The value to write (in <a href="https://developer.gnome.org/glib/stable/gvariant-text.html">GVariant format</a>)」</li>
+</ul>
 <h2 id="manpage">觀看 manpage</h2>
 <p>執行</p>
 <pre class="code"><code class="language-sh">$ man 1 dconf</code></pre>
@@ -388,7 +443,7 @@ Use 'dconf help COMMAND' to get detailed help.</code></pre>
 <nav class="pagination" aria-label="Footer">
 	<div class="previous">
 		
-		<a href="../../deb-package/dconf-cli/" title="dconf-cli">
+		<a href="../../deb-package/dconf-editor/" title="dconf-editor">
 			<span class="direction">
             上一頁
           </span>
@@ -398,7 +453,7 @@ Use 'dconf help COMMAND' to get detailed help.</code></pre>
 				</div>
 				<div class="stretch">
 					<div class="title">
-						dconf-cli
+						dconf-editor
 					</div>
 				</div>
 			</div>

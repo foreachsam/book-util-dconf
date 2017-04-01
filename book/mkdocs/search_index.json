@@ -17,7 +17,7 @@
         },
         {
             "location": "/content/reference/manual/",
-            "text": "manual\n\n\n\u95b1\u8b80\u6587\u4ef6\n\n\n\n\n$ man 1 \ndconf\n\n\n$ man 7 \ndconf",
+            "text": "manual\n\n\n\u95b1\u8b80\u6587\u4ef6\n\n\n\n\n$ man 1 \ndconf\n\n\n$ man 7 \ndconf\n\n\n\n\nGNOME Developer\n\n\n\n\ndconf\n\n\nGVariant Text Format",
             "title": "manual"
         },
         {
@@ -29,6 +29,11 @@
             "location": "/content/reference/manual/#_1",
             "text": "$ man 1  dconf  $ man 7  dconf",
             "title": "\u95b1\u8b80\u6587\u4ef6"
+        },
+        {
+            "location": "/content/reference/manual/#gnome-developer",
+            "text": "dconf  GVariant Text Format",
+            "title": "GNOME Developer"
         },
         {
             "location": "/content/deb-package/",
@@ -86,8 +91,23 @@
             "title": "\u4e0b\u8f09 Source Package"
         },
         {
+            "location": "/content/deb-package/dconf-editor/",
+            "text": "dconf-editor\n\n\nPackage\n\n\n\n\ndconf-editor",
+            "title": "dconf-editor"
+        },
+        {
+            "location": "/content/deb-package/dconf-editor/#dconf-editor",
+            "text": "",
+            "title": "dconf-editor"
+        },
+        {
+            "location": "/content/deb-package/dconf-editor/#package",
+            "text": "dconf-editor",
+            "title": "Package"
+        },
+        {
             "location": "/content/command/dconf/",
-            "text": "dconf command\n\n\n\u89c0\u770b help\n\n\n\u57f7\u884c\n\n\n$ dconf help\n\n\n\n\n\u986f\u793a\n\n\nUsage:\n  dconf COMMAND [ARGS...]\n\nCommands:\n  help              Show this information\n  read              Read the value of a key\n  list              List the contents of a dir\n  write             Change the value of a key\n  reset             Reset the value of a key or dir\n  compile           Compile a binary database from keyfiles\n  update            Update the system databases\n  watch             Watch a path for changes\n  dump              Dump an entire subpath to stdout\n  load              Populate a subpath from stdin\n\nUse 'dconf help COMMAND' to get detailed help.\n\n\n\n\n\u57f7\u884c\u6307\u4ee4\n\n\n\u57f7\u884c\n\n\n$ dconf dump /\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf dump / | less\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf dump / | grep org/gnome/nm-applet -A 3\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf list /org/gnome/nm-applet/\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf watch /org/gnome/nm-applet/show-applet\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf read /org/gnome/nm-applet/show-applet\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf write /org/gnome/nm-applet/show-applet false\n\n\n\n\n\u89c0\u770b manpage\n\n\n\u57f7\u884c\n\n\n$ man 1 dconf\n\n\n\n\n\u53ef\u4ee5\u770b\u5230\u300c\ndconf\n\u300d\u7684\u4f7f\u7528\u8aaa\u660e\u3002\n\n\n\u67e5\u8a62 dconf \u653e\u5728\u90a3\u500b\u4f4d\u7f6e\n\n\n\u57f7\u884c\n\n\n$ whereis dconf\n\n\n\n\n\u986f\u793a\n\n\ndconf: /usr/bin/dconf /etc/dconf /usr/lib/dconf /usr/bin/X11/dconf /usr/share/man/man1/dconf.1.gz /usr/share/man/man7/dconf.7.gz\n\n\n\n\n\u67e5\u8a62 dconf \u5c6c\u65bc\u90a3\u500b\u5957\u4ef6\n\n\n\u57f7\u884c\n\n\n$ dpkg -S /usr/bin/dconf\n\n\n\n\n\u986f\u793a\n\n\ndconf-cli: /usr/bin/dconf\n\n\n\n\n\u8868\u793a\u300c/usr/bin/dconf\u300d\u662f\u5c6c\u65bc\u300c\ndconf-cli\n\u300d\u9019\u500b\u5957\u4ef6\u3002",
+            "text": "dconf command\n\n\n\u89c0\u770b help\n\n\n\u57f7\u884c\n\n\n$ dconf help\n\n\n\n\n\u986f\u793a\n\n\nUsage:\n  dconf COMMAND [ARGS...]\n\nCommands:\n  help              Show this information\n  read              Read the value of a key\n  list              List the contents of a dir\n  write             Change the value of a key\n  reset             Reset the value of a key or dir\n  compile           Compile a binary database from keyfiles\n  update            Update the system databases\n  watch             Watch a path for changes\n  dump              Dump an entire subpath to stdout\n  load              Populate a subpath from stdin\n\nUse 'dconf help COMMAND' to get detailed help.\n\n\n\n\n\n\ndconf\n\n\n\n\n\u57f7\u884c\u6307\u4ee4\n\n\n\u57f7\u884c\n\n\n$ dconf dump /\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf dump / | less\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf dump / | grep org/gnome/nm-applet -A 3\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf list /org/gnome/nm-applet/\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf watch /org/gnome/nm-applet/show-applet\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf read /org/gnome/nm-applet/show-applet\n\n\n\n\n\u57f7\u884c\n\n\n$ dconf write /org/gnome/nm-applet/show-applet false\n\n\n\n\n\u8a3b: \u5728write\u7684\u6642\u5019\uff0c\u300c\u8a2d\u5b9a\u503c\u300d\u8981\u4f9d\u64da\u300c\nGVariant Text Format\n\u300d\uff0c\n\n\n\u4f8b\u5982\u300c\u5b57\u4e32\u300d\uff0c\n\n\n\u5728\u300cGVariant Text Format\u300d\u662f\u300c\"\u8a2d\u5b9a\u503c\"\u300d\u6216\u662f\u300c'\u8a2d\u5b9a\u503c'\u300d\uff0c\n\n\n\u5728\u300c\u4e0b\u6307\u4ee4\u300d\u7684\u6642\u5019\uff0c\u5c31\u8981\u8b8a\u6210\u300c'\"\u8a2d\u5b9a\u503c\"'\u300d\u6216\u662f\u300c\"'\u8a2d\u5b9a\u503c'\"\u300d\n\n\n\u6240\u4ee5\u57f7\u884c\n\n\n$ dconf write /org/gnome/builder/editor/font-name \n'Noto Sans Mono CJK TC 14'\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ dconf write /org/gnome/builder/editor/font-name '\nNoto Sans Mono CJK TC 14\n'\n\n\n\n\n\u5c31\u53ef\u4ee5\u6210\u529f\u8a2d\u5b9a\u3002\n\n\n\u82e5\u662f\u57f7\u884c\n\n\n$ dconf write /org/gnome/builder/editor/font-name 'Noto Sans Mono CJK TC 14'\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ dconf write /org/gnome/builder/editor/font-name \nNoto Sans Mono CJK TC 14\n\n\n\n\n\u5c31\u6703\u51fa\u73fe\u4e0b\u9762\u7684\u63d0\u793a\u8a0a\u606f\n\n\nerror: 0-1:unknown keyword\n\nUsage:\n  dconf write KEY VALUE\n\nWrite a new value to a key\n\nArguments:\n  KEY         A key path (starting, but not ending with '/')\n  VALUE       The value to write (in GVariant format)\n\n\n\n\n\u6ce8\u610f\u4e0a\u9762\u7684\u63d0\u793a\u8a0a\u606f\uff0c\n\n\n\n\n\u7b2c\u4e00\u884c\u300cerror: 0-1:unknown keyword\u300d\n\n\n\u6700\u672b\u884c\u300cVALUE       The value to write (in \nGVariant format\n)\u300d\n\n\n\n\n\u89c0\u770b manpage\n\n\n\u57f7\u884c\n\n\n$ man 1 dconf\n\n\n\n\n\u53ef\u4ee5\u770b\u5230\u300c\ndconf\n\u300d\u7684\u4f7f\u7528\u8aaa\u660e\u3002\n\n\n\u67e5\u8a62 dconf \u653e\u5728\u90a3\u500b\u4f4d\u7f6e\n\n\n\u57f7\u884c\n\n\n$ whereis dconf\n\n\n\n\n\u986f\u793a\n\n\ndconf: /usr/bin/dconf /etc/dconf /usr/lib/dconf /usr/bin/X11/dconf /usr/share/man/man1/dconf.1.gz /usr/share/man/man7/dconf.7.gz\n\n\n\n\n\u67e5\u8a62 dconf \u5c6c\u65bc\u90a3\u500b\u5957\u4ef6\n\n\n\u57f7\u884c\n\n\n$ dpkg -S /usr/bin/dconf\n\n\n\n\n\u986f\u793a\n\n\ndconf-cli: /usr/bin/dconf\n\n\n\n\n\u8868\u793a\u300c/usr/bin/dconf\u300d\u662f\u5c6c\u65bc\u300c\ndconf-cli\n\u300d\u9019\u500b\u5957\u4ef6\u3002",
             "title": "dconf"
         },
         {
@@ -97,12 +117,12 @@
         },
         {
             "location": "/content/command/dconf/#help",
-            "text": "\u57f7\u884c  $ dconf help  \u986f\u793a  Usage:\n  dconf COMMAND [ARGS...]\n\nCommands:\n  help              Show this information\n  read              Read the value of a key\n  list              List the contents of a dir\n  write             Change the value of a key\n  reset             Reset the value of a key or dir\n  compile           Compile a binary database from keyfiles\n  update            Update the system databases\n  watch             Watch a path for changes\n  dump              Dump an entire subpath to stdout\n  load              Populate a subpath from stdin\n\nUse 'dconf help COMMAND' to get detailed help.",
+            "text": "\u57f7\u884c  $ dconf help  \u986f\u793a  Usage:\n  dconf COMMAND [ARGS...]\n\nCommands:\n  help              Show this information\n  read              Read the value of a key\n  list              List the contents of a dir\n  write             Change the value of a key\n  reset             Reset the value of a key or dir\n  compile           Compile a binary database from keyfiles\n  update            Update the system databases\n  watch             Watch a path for changes\n  dump              Dump an entire subpath to stdout\n  load              Populate a subpath from stdin\n\nUse 'dconf help COMMAND' to get detailed help.   dconf",
             "title": "\u89c0\u770b help"
         },
         {
             "location": "/content/command/dconf/#_1",
-            "text": "\u57f7\u884c  $ dconf dump /  \u57f7\u884c  $ dconf dump / | less  \u57f7\u884c  $ dconf dump / | grep org/gnome/nm-applet -A 3  \u57f7\u884c  $ dconf list /org/gnome/nm-applet/  \u57f7\u884c  $ dconf watch /org/gnome/nm-applet/show-applet  \u57f7\u884c  $ dconf read /org/gnome/nm-applet/show-applet  \u57f7\u884c  $ dconf write /org/gnome/nm-applet/show-applet false",
+            "text": "\u57f7\u884c  $ dconf dump /  \u57f7\u884c  $ dconf dump / | less  \u57f7\u884c  $ dconf dump / | grep org/gnome/nm-applet -A 3  \u57f7\u884c  $ dconf list /org/gnome/nm-applet/  \u57f7\u884c  $ dconf watch /org/gnome/nm-applet/show-applet  \u57f7\u884c  $ dconf read /org/gnome/nm-applet/show-applet  \u57f7\u884c  $ dconf write /org/gnome/nm-applet/show-applet false  \u8a3b: \u5728write\u7684\u6642\u5019\uff0c\u300c\u8a2d\u5b9a\u503c\u300d\u8981\u4f9d\u64da\u300c GVariant Text Format \u300d\uff0c  \u4f8b\u5982\u300c\u5b57\u4e32\u300d\uff0c  \u5728\u300cGVariant Text Format\u300d\u662f\u300c\"\u8a2d\u5b9a\u503c\"\u300d\u6216\u662f\u300c'\u8a2d\u5b9a\u503c'\u300d\uff0c  \u5728\u300c\u4e0b\u6307\u4ee4\u300d\u7684\u6642\u5019\uff0c\u5c31\u8981\u8b8a\u6210\u300c'\"\u8a2d\u5b9a\u503c\"'\u300d\u6216\u662f\u300c\"'\u8a2d\u5b9a\u503c'\"\u300d  \u6240\u4ee5\u57f7\u884c  $ dconf write /org/gnome/builder/editor/font-name  'Noto Sans Mono CJK TC 14'  \u6216\u662f\u57f7\u884c  $ dconf write /org/gnome/builder/editor/font-name ' Noto Sans Mono CJK TC 14 '  \u5c31\u53ef\u4ee5\u6210\u529f\u8a2d\u5b9a\u3002  \u82e5\u662f\u57f7\u884c  $ dconf write /org/gnome/builder/editor/font-name 'Noto Sans Mono CJK TC 14'  \u6216\u662f\u57f7\u884c  $ dconf write /org/gnome/builder/editor/font-name  Noto Sans Mono CJK TC 14  \u5c31\u6703\u51fa\u73fe\u4e0b\u9762\u7684\u63d0\u793a\u8a0a\u606f  error: 0-1:unknown keyword\n\nUsage:\n  dconf write KEY VALUE\n\nWrite a new value to a key\n\nArguments:\n  KEY         A key path (starting, but not ending with '/')\n  VALUE       The value to write (in GVariant format)  \u6ce8\u610f\u4e0a\u9762\u7684\u63d0\u793a\u8a0a\u606f\uff0c   \u7b2c\u4e00\u884c\u300cerror: 0-1:unknown keyword\u300d  \u6700\u672b\u884c\u300cVALUE       The value to write (in  GVariant format )\u300d",
             "title": "\u57f7\u884c\u6307\u4ee4"
         },
         {
